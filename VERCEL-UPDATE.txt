@@ -1,0 +1,12 @@
+Next.js güvenlik uyarısı için güncelleme
+
+Bu pakette Next.js sürümü 15.5.9 olarak güncellendi.
+
+GitHub'da mevcut kamplog-site deposuna:
+1. package.json dosyasını açın.
+2. Kalem (Edit) simgesine basın.
+3. İçeriğini bu paketteki package.json içeriğiyle değiştirin.
+4. Commit changes → Commit directly to main.
+5. Vercel otomatik yeni deployment başlatacaktır.
+
+Not: Eğer Vercel'in güvenlik uyarısı sürerse, Vercel'in gösterdiği advisory ve önerilen minimum sürümü kontrol edin; gerekirse daha yeni yamalı sürüme yükseltin.

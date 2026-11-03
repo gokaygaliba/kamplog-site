@@ -1,0 +1,4 @@
+import './globals.css';
+import type { Metadata } from 'next';
+export const metadata: Metadata = { title: { default: 'KAMPLOG — Doğaya Açılan Yol', template: '%s | KAMPLOG' }, description: 'Kamp rehberleri, Türkiye doğa rotaları, ekipman incelemeleri ve outdoor yaşam üzerine ilham veren yazılar.', metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? 'https://'+process.env.VERCEL_URL : 'http://localhost:3000')), openGraph:{type:'website',locale:'tr_TR',siteName:'KAMPLOG',title:'KAMPLOG — Doğaya Açılan Yol',description:'Doğaya açılan yol: kamp, rota ve outdoor rehberleri.'}, robots:{index:true,follow:true} };
+export default function RootLayout({children}:{children:React.ReactNode}) { const client=process.env.NEXT_PUBLIC_ADSENSE_CLIENT; return <html lang="tr"><body>{client && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${client}`} crossOrigin="anonymous"/>}{children}</body></html>; }
